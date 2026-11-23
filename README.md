@@ -1,5 +1,7 @@
 # SkySynoptic — native macOS packaging project
 
+**Portfolio / project overview:** [SkySynoptic showcase](SHOWCASE.md) · [Personal portfolio](https://arielkapur.github.io/#work) (after portfolio approval).
+
 **What this is:** The SkySynoptic NOAA GFS forecast map with a real macOS desktop entry point. When built on macOS, PyInstaller bundles the Python runtime, native GUI bridge, and scientific libraries into `SkySynoptic.app`; the app hosts its own local data server inside a native macOS window, using a random localhost port. The target end-user launch is double-clicking the app, **not** entering Terminal commands or keeping a Terminal window open.
 
 **What this is not yet:** This ZIP is SOURCE CODE plus a prepared GitHub Actions Mac build workflow, **not a completed DMG**. The supplied environment runs Linux; no native macOS `.app`, actual `.dmg`, or Apple notarization has been built or verified. A signed/notarized release needs Apple Developer ID signing credentials and the Apple notarization service. An unsigned DMG is **not** exempt from Gatekeeper.
